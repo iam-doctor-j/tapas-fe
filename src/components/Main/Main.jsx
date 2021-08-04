@@ -30,7 +30,7 @@ const Main = () => {
   };
 
   return (
-    <section className="bg-pattern h-full w-full sm:w-3/4 mx-auto bg-center p-6 sm:p-12">
+    <section className="bg-pattern h-full w-full sm:w-3/4 mx-auto bg-center bg-fixed p-6 sm:p-12">
       <div className="flex justify-between items-center">
         <Logo width="40%" />
         <ContactUsButton />
