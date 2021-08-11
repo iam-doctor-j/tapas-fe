@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ForwardIcon from "../ForwardIcon/ForwardIcon";
+import "./About.css";
 
 const About = () => {
   const [isAboutMaxed, setAboutMaxed] = useState(false);
@@ -55,25 +56,20 @@ const About = () => {
             <p>Your vision, Tapas' implementation, our creation.</p>
           </>
         )}
-        {!isAboutMaxed ? (
-          <button
-            onClick={() => {
-              handleShowMoreClick(true);
-            }}
-            className="flex items-center font-bold text-xs"
-          >
-            Read more <ForwardIcon className="ml-1" size={35} />
-          </button>
-        ) : (
-          <button
-            onClick={() => {
-              handleShowMoreClick(false);
-            }}
-            className="flex items-center font-bold text-xs"
-          >
-            Less <ForwardIcon className="ml-1" size={35} />
-          </button>
-        )}
+        <button
+          onClick={() => {
+            handleShowMoreClick(!isAboutMaxed);
+          }}
+          className="flex items-center font-bold text-xs"
+        >
+          {isAboutMaxed ? "Less" : "Read more"}{" "}
+          <ForwardIcon
+            className={`ml-1 transform-gpu transition-transform duration-300 origin-center ${
+              isAboutMaxed ? "rotate-180" : "rotate-0"
+            }`}
+            size={35}
+          />
+        </button>
       </article>
     </React.Fragment>
   );
