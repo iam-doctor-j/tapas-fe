@@ -30,7 +30,7 @@ const Main = () => {
   };
 
   return (
-    <section className="bg-pattern h-full w-full sm:w-3/4 mx-auto bg-center bg-fixed p-6 sm:p-12">
+    <section className="bg-pattern h-full w-full sm:w-3/4 overflow-hidden mx-auto bg-center p-6 sm:p-12">
       <div className="flex justify-between items-center">
         <Logo width="40%" />
         <ContactUsButton />
@@ -59,7 +59,7 @@ const Main = () => {
           {getServicesJsx()}
         </Swiper>
       </div>
-      <h1 className="text-gray-100 text-lg sm:text-xl md:text-2xl sm:mt-10 font-bold">
+      <h1 className="text-gray-100 text-lg sm:text-xl md:text-2xl mt-11 sm:mt-10 font-bold">
         About Us
       </h1>
       <article className="text-gray-100 about-us relative">

@@ -10,8 +10,12 @@
   background: #007aff;
 }
 
+.swiper-container {
+  overflow: visible;
+}
+
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 0;
+  bottom: -20px;
 }
