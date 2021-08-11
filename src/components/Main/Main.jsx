@@ -12,13 +12,6 @@ import useWindowDimensions from "../../hooks/custom-hooks";
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Main = () => {
-  // useEffect(() => {
-  //   fetch("src/data/services.json")
-  //     .then((res) => res.text())
-  //     .then((json) => console.log(json));
-  // });
-  // console.log(servicesData);
-
   const { width } = useWindowDimensions();
 
   const getServicesJsx = () => {
