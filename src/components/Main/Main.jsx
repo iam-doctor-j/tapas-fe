@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactUsButton from "../ContactUsButton/ContactUsButton";
 import Logo from "../Logo/Logo";
 import "swiper/swiper-bundle.min.css";
@@ -8,14 +8,17 @@ import About from "../About/About";
 import OurServices from "../OurServices/OurServices";
 import TeamCard from "../TeamCard/TeamCard";
 
+import ContactUsModal from "../ContactUsModal/ContactUsModal";
+
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Main = () => {
+  const [modalVisible, setModalVisible] = useState(false);
   return (
     <section className="bg-pattern min-h-screen w-full sm:w-3/4 overflow-hidden mx-auto bg-center p-6 sm:p-12">
       <div className="flex justify-between items-center">
         <Logo width="40%" />
-        <ContactUsButton />
+        <ContactUsButton onClick={() => setModalVisible(true)} />
       </div>
       <p className="text-gray-100 text-2xl sm:text-3xl md:text-4xl sm:text-center sm:my-6 my-8">
         We help you to make your business enticing in the virtual world.
@@ -37,6 +40,7 @@ const Main = () => {
         />
         <TeamCard name="Monesh" designation="Chief resource manager" />
       </div>
+      {modalVisible && <ContactUsModal setModalVisible={setModalVisible} />}
     </section>
   );
 };
