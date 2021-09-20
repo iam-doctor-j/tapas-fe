@@ -39,7 +39,10 @@ const About = () => {
       >
         About Us
       </motion.h1>
-      <motion.article layout className="text-gray-100 about-us relative">
+      <motion.article
+        layout
+        className="text-gray-100 about-us relative text-xl bg-monogray shadow-xlc rounded-md px-4 py-1 mt-4"
+      >
         <p>
           In today's world, digital and virtual marketing and conveying vision
           through cinematography are taking over like world with power. And the

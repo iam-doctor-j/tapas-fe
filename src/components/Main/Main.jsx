@@ -9,13 +9,14 @@ import OurServices from "../OurServices/OurServices";
 import TeamCard from "../TeamCard/TeamCard";
 
 import ContactUsModal from "../ContactUsModal/ContactUsModal";
+import OurServicesNext from "../OurServicesNext/OurServicesNext";
 
 SwiperCore.use([EffectCoverflow, Pagination]);
 
 const Main = () => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
-    <section className="bg-pattern min-h-screen w-full sm:w-3/4 overflow-hidden mx-auto bg-center p-6 sm:p-12">
+    <section className="bg-pattern min-h-screen w-full lg:w-3/4 overflow-hidden mx-auto bg-center p-6 sm:p-12">
       <div className="flex justify-between items-center">
         <Logo width="40%" />
         <ContactUsButton onClick={() => setModalVisible(true)} />
@@ -23,7 +24,8 @@ const Main = () => {
       <p className="text-gray-100 text-2xl sm:text-3xl md:text-4xl sm:text-center sm:my-6 my-8">
         We help you to make your business enticing in the virtual world.
       </p>
-      <OurServices />
+      {/* <OurServices /> */}
+      <OurServicesNext />
       <About />
       <h1 className="text-gray-100 text-lg sm:text-xl md:text-2xl mt-11 sm:mt-10 font-bold">
         Our Team
