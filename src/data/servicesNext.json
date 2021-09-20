@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Marketing Services",
+    "items": [
+      "Market research",
+      "Product placement & promotion",
+      "Event promotion",
+      "Digital ads ",
+      "Traditional ads",
+      "Digital pamphlets",
+      "Customer outreach",
+      "Search engine optimization"
+    ],
+    "details": "Marketing services and market analysis are needed to provide your business a virtual upper hand with the help of market researches, trend researches and demographic status."
+  },
+  {
+    "name": "Business Development",
+    "items": [
+      "Customer targeting",
+      "Business strategies",
+      "Consultation",
+      "Business analysis",
+      "Startup incubation",
+      "& more"
+    ],
+    "details": "We provides business development and strategies that will help a business to take the right step statistically to procure maximum of opportunities."
+  },
+  {
+    "name": "Content Creation",
+    "items": [
+      "Ads creation",
+      "Videography",
+      "Voiceover work",
+      "Promotional content",
+      "Social media management",
+      "Photoshoots",
+      "Website design, developement & maintainance",
+      "Status report",
+      "Youtube video creation"
+    ],
+    "details": "Open up your world of imagination and vision and we'll make sure to convey your thoughts by our skilled cinematography and videography work. Besides that, we have content creation and we'll help you give your business a virtual identity in all the social media platforms to cover up all the possibilities for your growth."
+  }
+]
